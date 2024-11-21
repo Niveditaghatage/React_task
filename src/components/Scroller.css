@@ -1,0 +1,443 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  /* Container */
+  .moonboxes-container {
+    padding: 20px;
+    color: #fff;
+    /* background: #000 url('/path/to/star-background.jpg') repeat; */
+  }
+  
+  /* Header */
+  .moonboxes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d6a93a;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .icons span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Content */
+  .moonboxes-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .nft-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .nft-item {
+    border: 2px solid #d6a93a;
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+    background-color: #1a1a1a;
+  }
+  
+  .nft-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nft-item.highlighted {
+    border: 3px solid #00ff00;
+  }
+  
+  .series-title {
+    font-size: 1rem;
+    color: #d6a93a;
+    margin-top: 10px;
+  }
+  
+  /* Text Section */
+  .text-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .text-section h2 {
+    font-size: 1.5rem;
+    color: #d6a93a;
+  }
+  
+  .text-section p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  .moonboxes-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d6a93a;
+    margin-top: 20px;
+  }
+  
+  .footer-item {
+    font-size: 1rem;
+  }
+  
+  .explore-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+  }
+  /* Container */
+.moonboxes-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fdd835;
+  }
+  
+  /* Horizontal Scroller */
+  .nft-scroller {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Hide the scrollbar */
+  .nft-scroller::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nft-scroller {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* NFT Items */
+  .nft-item {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+  }
+  
+  .nft-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits the container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    border: 2px solid #fdd835; /* Optional: Border */
+  }
+  /* Scroll Buttons */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fdd835;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .scroll-button.left {
+    left: 10px;
+    position: fixed;
+  }
+  
+  .scroll-button.right {
+    right: 10px;
+    position: fixed;
+  }
+  
+  .scroll-button:hover {
+    background-color: #c6a700;
+  }
+  /* Container */
+.moonboxes-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fdd835;
+  }
+  
+  /* Horizontal Scroller */
+  .nft-scroller {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Hide the scrollbar */
+  .nft-scroller::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nft-scroller {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* NFT Items */
+  .nft-item {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+  }
+  
+  .nft-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits the container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    border: 2px solid #fdd835; /* Optional: Border */
+  }
+  /* Main container to enable horizontal scrolling */
+.scroll-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping to the next line */
+    padding: 10px;
+    gap: 10px; /* Space between images */
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Hide scrollbar for a clean UI */
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Styling for images */
+  .scroll-image {
+    flex: 0 0 auto; /* Prevents shrinking */
+    width: 300px; /* Fixed width for each image */
+    height: 200px; /* Fixed height for each image */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+  /* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Container */
+.moonboxes-container {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fdd835;
+}
+
+/* Header */
+.moonboxes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d6a93a;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.icons span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Content */
+.moonboxes-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* NFT Items */
+.nft-scroller {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.nft-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.nft-scroller {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nft-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.nft-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fdd835;
+}
+
+.nft-item.highlighted {
+  border: 3px solid #00ff00;
+}
+
+/* Footer */
+.moonboxes-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d6a93a;
+  margin-top: 20px;
+}
+
+.footer-item {
+  font-size: 1rem;
+}
+
+.explore-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #ffd700;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .moonboxes-header, .moonboxes-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nft-item {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .icons span {
+    margin-left: 5px;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .moonboxes-container {
+    padding: 10px;
+  }
+
+  .nft-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .text-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .scroll-button {
+    padding: 8px;
+  }
+}
+
+/* Scroll Buttons */
+.scroll-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fdd835;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+.scroll-button:hover {
+  background-color: #c6a700;
+}
